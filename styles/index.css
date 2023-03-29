@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  background-color: #004cf1;
+  font-size: 12px;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  background-color: #39329b;
+}
+header img {
+  width: 100%;
+  height: 200px;
+}
+@media screen and (max-width: 600px) {
+  header .logo-name {
+    margin-bottom: 24px;
+  }
+}
+header .logo-name .name {
+  font-size: 24px;
+  margin: 0;
+  color: rgb(4, 252, 239);
+}
+
+nav {
+  margin: 24px auto 0;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #14304d;
+  border-radius: 8px;
+  font-size: 0;
+}
+
+nav a {
+  line-height: 50px;
+  height: 100%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(250, 0, 0);
+  cursor: pointer;
+}
+
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
+
+a:nth-child(1) {
+  width: 100px;
+}
+
+a:nth-child(2) {
+  width: 110px;
+}
+
+a:nth-child(3) {
+  width: 100px;
+}
+
+a:nth-child(4) {
+  width: 160px;
+}
+
+a:nth-child(5) {
+  width: 120px;
+}
+
+nav .start-home, a:nth-child(1):hover ~ .animation {
+  width: 100px;
+  left: 0px;
+  background-color: #1abc9c;
+}
+
+nav .start-about, a:nth-child(2):hover ~ .animation {
+  width: 110px;
+  left: 100px;
+  background-color: #e74c3c;
+}
+
+nav .start-blog, a:nth-child(3):hover ~ .animation {
+  width: 100px;
+  left: 210px;
+  background-color: #3498db;
+}
+
+nav .start-portefolio, a:nth-child(4):hover ~ .animation {
+  width: 160px;
+  left: 320px;
+  background-color: #9b59b6;
+}
+
+nav .start-contact, a:nth-child(5):hover ~ .animation {
+  width: 120px;
+  left: 471px;
+  background-color: #e67e22;
+}
+
+img {
+  height: 150px;
+  border-radius: 25%;
+  margin: auto;
+  display: block;
+}
+
+section {
+  @import url("https://fonts.googleapis.com/css?family=Roboto:700,900");
+}
+section body {
+  background: radial-gradient(#fff, #aaa);
+  background-size: 100vw 100vh;
+  overflow: hidden;
+  padding-top: 40vh;
+}
+section h1 {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 35px;
+  font-weight: 600;
+  animation: netflix_style 3.5s infinite;
+  outline: none;
+  flex-wrap: wrap;
+}
+@keyframes netflix_style {
+  0% {
+    text-shadow: makeshortshadow(100, 1);
+    color: #f3f3f3;
+    transform: scale(1.5, 1.5);
+  }
+  10% {
+    text-shadow: makeshortshadow(100, 1.5);
+    color: #f3f3f3;
+    transform: scale(1.5, 1.5);
+  }
+  15% {
+    color: #f3f3f3;
+  }
+  20% {
+    color: #e90418;
+    text-shadow: none;
+    transform: scale(1.1, 1.1);
+  }
+  75% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    color: #e90418;
+    transform: scale(0.85, 0.9);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+footer {
+  background-color: #00ffff;
+  text-align: center;
+  margin-top: auto;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+footer .social-media a i {
+  color: #0026ff;
+  font-size: 20px;
+}
+
+.info p {
+  color: #d400ff;
+  font-size: 12px;
+}/*# sourceMappingURL=index.css.map */
