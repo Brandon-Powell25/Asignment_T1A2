@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background: rgb(4, 21, 255);
+  padding: 15px;
+}
+
+.container img {
+  width: 100%;
+  display: block;
+  filter: grayscale(1);
+  transition: all 100ms ease-out;
+}
+
+.container img:hover {
+  transform: scale(1.04);
+  filter: grayscale(0);
+}/*# sourceMappingURL=gallery.css.map */
