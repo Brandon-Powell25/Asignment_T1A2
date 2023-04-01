@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
-
+//About me box//
 *{
     box-sizing: border-box;
     padding: 0;
@@ -13,21 +13,22 @@ body{
     align-content: center;
     min-height: 100vh;
 }
-@media (min-width: 600px) {
-    section{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        min-height: 70vh;
-        width: 75vw;
-        margin: 0 auto;
-        box-shadow: 0px 15px 20px 20px rgba(7, 4, 4, 0.116), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 12px
-    }   
-}
 
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+    width: 75vw;
+    margin: 0 auto;
+    box-shadow: -1px 0px 40px 20px rgba(0,0,0,0.75);
+    border-radius: 12px;
+    flex-wrap: wrap;
+}   
+
+//img styling//
 .image{
-    background-color: #6464ff;
-    display: flex;
+    background-color: #4343e6;
+    flex-wrap: wrap;
     border-radius: 10px 0 0 10px;
 }
 .image img{
@@ -36,13 +37,13 @@ body{
     }
     
 .about {
-    background-color: #797c85;
+    background-color: #2645a1;
     display: block
     
    
    
 }
-
+//About me styling//
 h2{
     font-family: cursive;
     font-size: 36px;
@@ -50,9 +51,7 @@ h2{
     opacity: 0.9;
     text-align: center;
 }
-
-
-
+//Paragraph Styling//
 p {
     font-size: 14px;         
     font-weight: 900;
@@ -61,9 +60,10 @@ p {
     text-align: center;
     margin: 0 auto;
     line-height: 1.7;
-    color:#000000
+    color:#000000;
+    flex-wrap: wrap;
 }
-
+//Resume button//
 button {
     margin: 0 auto;
     display: block;
@@ -74,6 +74,7 @@ button {
     border-radius: 50px; 
     transition: .3s;        
 }
+
 button:hover {
     animation: pulse 1s infinite;
     transition: .3s;
@@ -90,8 +91,12 @@ button:hover {
     }
   }
 
-  a {
-    border: 3px solid palevioletred;
+ a {
+    border: 1px solid rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 15px;
+    color: #000000;    
+
   }
 
 /* unvistited link */
@@ -102,5 +107,13 @@ a:link {
 a:visited {
     color: #4a2574
 }
+
+.info p {
+    color: #3bfc00;
+}
+a2 {
+    justify-content: center;
+}
+
             
 

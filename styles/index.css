@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #004cf1;
+  background-color: #39329b;
   font-size: 12px;
   font-family: sans-serif;
   min-height: 100vh;
@@ -111,6 +111,10 @@ nav .start-contact, a:nth-child(5):hover ~ .animation {
   background-color: #e67e22;
 }
 
+a:hover {
+  color: #07090c;
+}
+
 img {
   height: 150px;
   border-radius: 25%;
@@ -174,16 +178,26 @@ footer {
   margin-top: auto;
 }
 footer .social-media {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 0;
+  font-size: 20px;
 }
 footer .social-media a i {
   color: #0026ff;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.social-media a i:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #080803;
+}
+
+.social-media a i:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #0e0d05;
+  text-shadow: 0 0 5px #070703;
 }
 
 .info p {
-  color: #d400ff;
+  color: #080708;
   font-size: 12px;
+  font-weight: 100;
 }/*# sourceMappingURL=index.css.map */
